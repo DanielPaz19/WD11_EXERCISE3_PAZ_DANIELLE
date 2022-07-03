@@ -137,6 +137,7 @@ body {
 }
 
 .heading1 {
+  color: #16697a;
   margin: 0;
   font-size: 60px;
   text-align: center;
@@ -186,6 +187,7 @@ body {
 }
 
 .img_description h2 {
+  color: #925e78;
   margin: 0;
 }
 
@@ -198,6 +200,11 @@ body {
 .img_hoverable {
   display: inline-block;
   position: relative;
+  transition: 0.25s;
+}
+
+.img_hoverable:hover {
+  transform: translateY(-20px);
 }
 
 .img_hoverable img {
@@ -274,7 +281,7 @@ body {
   font-size: 30px;
   text-decoration: none;
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   letter-spacing: 5px;
