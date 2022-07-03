@@ -136,10 +136,6 @@ body {
   margin-bottom: 200px;
 }
 
-#cultures {
-  height: 100vh;
-}
-
 .heading1 {
   margin: 0;
   font-size: 60px;
@@ -191,6 +187,67 @@ body {
 
 .img_description h2 {
   margin: 0;
+}
+
+.food_and_culture {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.img_hoverable {
+  display: inline-block;
+  position: relative;
+}
+
+.img_hoverable img {
+  margin: 0px 50px;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px black;
+  border: 1px black solid;
+  /* float: left; */
+  filter: contrast(1.5);
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  background-color: black;
+  width: 300px;
+  height: 400px;
+  z-index: 5;
+  margin: 0px 50px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.25s;
+  color: white;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.food_culture_description {
+  padding: 20px 10px;
+}
+
+.food_culture_btn {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.food_culture_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .float-right {
