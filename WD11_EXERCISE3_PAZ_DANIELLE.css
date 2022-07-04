@@ -265,7 +265,7 @@ body {
 
 .hotel_card-container {
   width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -276,20 +276,21 @@ body {
 .hotel_card {
   position: relative;
   height: 200px;
-  margin: 20px 50px;
+  margin: 20px 20px;
   display: inline-block;
   width: 600px;
   background-color: white;
   /* border: 1px solid black; */
   border-radius: 10px;
   /* box-shadow: 3px 3px 20px black; */
-  border: 1px solid rgba(146, 94, 120, 0.4);
+  border: 1px solid #16697a;
   cursor: pointer;
   transition: transform 0.25s;
 }
 
 .hotel_card:hover {
   transform: translate(5px, 5px);
+  border: none;
 }
 
 .hotel_card-img {
@@ -324,7 +325,7 @@ body {
 }
 
 .hotel_card-body {
-  color: 0B0A07;
+  color: #0b0a07;
   text-align: left;
   padding: 20px 10px;
   font-family: "Poppins", sans-serif;
@@ -348,7 +349,6 @@ body {
   height: 100%;
   width: 100%;
   right: 0;
-  border-radius: 0px 10px 10px 0px;
   /* background-color: #f24236; */
   z-index: 2;
   writing-mode: vertical-rl;
@@ -360,10 +360,46 @@ body {
   letter-spacing: 5px;
   border-radius: 10px;
   font-size: large;
+  border: 2px #f24236 solid;
 }
 
 .book:hover {
   opacity: 1;
+}
+
+.comment_container {
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.comment_box {
+  min-width: 50%;
+  max-width: 50%;
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #16697a;
+}
+
+.comment_submit {
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px #16697a solid;
+  background-color: #16697a;
+  color: #ffa62b;
+  cursor: pointer;
+}
+
+.comment_submit:hover {
+  color: white;
 }
 
 .float-right {
