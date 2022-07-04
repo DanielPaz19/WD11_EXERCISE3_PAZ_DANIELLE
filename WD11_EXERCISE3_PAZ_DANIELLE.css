@@ -72,6 +72,19 @@ body {
   letter-spacing: 5px;
 }
 
+#intro {
+  position: relative;
+}
+
+#intro img {
+  position: absolute;
+  width: 40%;
+  left: 10px;
+  top: 50px;
+  opacity: 0.07;
+  z-index: -1;
+}
+
 #navbar {
   position: relative;
   height: 50px;
@@ -134,6 +147,40 @@ body {
 
 #spots {
   margin-bottom: 200px;
+  position: relative;
+}
+
+.binoculars {
+  position: absolute;
+  opacity: 0.07;
+  right: 5%;
+  top: 5%;
+  transform: rotate(15deg);
+}
+.parade {
+  position: absolute;
+  opacity: 0.07;
+  left: 5%;
+  top: 25%;
+}
+.church {
+  position: absolute;
+  opacity: 0.07;
+  right: 5%;
+  top: 45%;
+}
+.shrine {
+  position: absolute;
+  opacity: 0.07;
+  left: 5%;
+  top: 62%;
+}
+
+.museum {
+  position: absolute;
+  opacity: 0.07;
+  right: 5%;
+  top: 85%;
 }
 
 .heading1 {
@@ -147,7 +194,7 @@ body {
 .intro_paragraph {
   width: 70%;
   font-family: "Poppins", sans-serif;
-  margin: 0 auto;
+  margin: 200px auto;
   font-weight: bold;
   text-indent: 50px;
   text-align: justify;
@@ -190,6 +237,23 @@ body {
 .img_description h2 {
   color: #925e78;
   margin: 0;
+}
+
+#cultures {
+  position: relative;
+}
+
+.fork {
+  position: absolute;
+  opacity: 0.07;
+  top: 5%;
+  left: 1%;
+}
+.masks {
+  position: absolute;
+  opacity: 0.07;
+  top: 60%;
+  right: 1%;
 }
 
 .food_and_culture {
@@ -261,6 +325,12 @@ body {
 
 #hotels {
   min-height: 100vh;
+  position: relative;
+}
+
+.night {
+  position: absolute;
+  opacity: 0.07;
 }
 
 .hotel_card-container {
@@ -367,6 +437,10 @@ body {
   opacity: 1;
 }
 
+#comments {
+  position: relative;
+}
+
 .comment_container {
   margin: 50px auto;
   width: 80%;
@@ -400,6 +474,48 @@ body {
 
 .comment_submit:hover {
   color: white;
+}
+
+.comment_img {
+  position: absolute;
+  opacity: 0.07;
+  top: 40%;
+  right: 10%;
+  z-index: -1;
+  transform: rotate(15deg);
+}
+.comment_img2 {
+  position: absolute;
+  opacity: 0.07;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+  transform: rotate(-15deg);
+}
+
+.social_media {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.social_media-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social_media span {
+  margin: 0px 10px;
+}
+.social_media img {
+  width: 50px;
+}
+
+.social_media a {
+  text-decoration: none;
 }
 
 .float-right {
