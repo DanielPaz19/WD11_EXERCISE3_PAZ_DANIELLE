@@ -37,6 +37,14 @@ body {
   color: white;
   letter-spacing: 20px;
   text-shadow: 2px 2px 20px black;
+  animation: drop 2s;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
 }
 
 .welcome p {
@@ -47,6 +55,16 @@ body {
   line-height: 1.5;
   text-shadow: 2px 2px 50px black;
   letter-spacing: 2px;
+  animation: from-right 4s ease-in-out;
+}
+@keyframes from-right {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .welcome a {
@@ -61,11 +79,25 @@ body {
   margin: 0;
   position: absolute;
   top: 110%;
-  left: 50%;
+  left: 10%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   transition: letter-spacing 0.5s;
   box-shadow: 2px 2px 50px black;
+  animation: zoom_out 2s;
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .welcome a:hover {
